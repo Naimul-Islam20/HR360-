@@ -1,0 +1,219 @@
+[
+{
+  "id": 1,
+  "menu_name": "Products",
+  "menu_uid": "products",
+  "parent_id": 0,
+  "order_no": 1,
+  "menu_icon": null,
+  "has_child": 1,
+  "children": [
+    {
+      "id": 2,
+      "menu_name": "Attendance Management",
+      "menu_uid": "products/attendance-management",
+      "parent_id": 1,
+      "order_no": 1,
+      "menu_icon": "BiCalendarCheck",
+      "icon_color": "#3B82F6",
+      "description": "Cloud-Based Employee Attendance Management Software",
+      "has_child": 0
+    },
+    {
+      "id": 3,
+      "menu_name": "Employee Leave Management",
+      "menu_uid": "products/leaves-management",
+      "parent_id": 1,
+      "order_no": 2,
+      "menu_icon": "BiClipboard",
+      "icon_color": "#F97316",
+      "description": "Track All Types of Leave, No Spreadsheets, No Paper",
+      "has_child": 0
+    },
+    {
+      "id": 4,
+      "menu_name": "Expense Management",
+      "menu_uid": "products/expense-management",
+      "parent_id": 1,
+      "order_no": 3,
+      "menu_icon": "BiDollar",
+      "icon_color": "#22C55E",
+      "description": "Capture And Record Every Penny Your Business Spends",
+      "has_child": 0
+    },
+    {
+      "id": 5,
+      "menu_name": "Employee Management",
+      "menu_uid": "products/employee-management",
+      "parent_id": 1,
+      "order_no": 4,
+      "menu_icon": "BiGroup",
+      "icon_color": "#F43F5E",
+      "description": "Most Handy Employee Management Tool with All Features",
+      "has_child": 0
+    },
+    {
+      "id": 6,
+      "menu_name": "Shift Management",
+      "menu_uid": "products/shift-management",
+      "parent_id": 1,
+      "order_no": 5,
+      "menu_icon": "BiTime",
+      "icon_color": "#EF4444",
+      "description": "Cloud-Based Employee Scheduling and Shift Management Solution",
+      "has_child": 0
+    },
+    {
+      "id": 7,
+      "menu_name": "Employee Tracking",
+      "menu_uid": "products/employee-tracking",
+      "parent_id": 1,
+      "order_no": 6,
+      "menu_icon": "BiMap",
+      "icon_color": "#8B5CF6",
+      "description": "Track Your Employees as They Work with The Best HR Software",
+      "has_child": 0
+    },
+    {
+      "id": 8,
+      "menu_name": "Payroll Software",
+      "menu_uid": "products/payroll",
+      "parent_id": 1,
+      "order_no": 7,
+      "menu_icon": "BiWallet",
+      "icon_color": "#22D3EE",
+      "description": "All in one HR Payroll and Loan Management Software in Bangladesh.",
+      "has_child": 0
+    },
+    {
+      "id": 9,
+      "menu_name": "Security",
+      "menu_uid": "products/security",
+      "parent_id": 1,
+      "order_no": 8,
+      "menu_icon": "BiShield",
+      "icon_color": "#22C55E",
+      "description": "Employee Management Became Secured and Powerful by PiHR",
+      "has_child": 0
+    },
+    {
+      "id": 10,
+      "menu_name": "Tax Management",
+      "menu_uid": "products/tax-management",
+      "parent_id": 1,
+      "order_no": 9,
+      "menu_icon": "BiFileBlank",
+      "icon_color": "#EF4444",
+      "description": "Tax Calculation, Tax Rule set-up etc. with the Complete HR Solution",
+      "has_child": 0
+    },
+    {
+      "id": 11,
+      "menu_name": "Digital Notice Board",
+      "menu_uid": "products/digital-notice-board",
+      "parent_id": 1,
+      "order_no": 10,
+      "menu_icon": "FaChalkboardTeacher",
+      "icon_color": "#FBBF24",
+      "description": "Create Announcements, Notice Board, and More with PiHR",
+      "has_child": 0
+    },
+    {
+      "id": 12,
+      "menu_name": "Task Management",
+      "menu_uid": "products/task-management",
+      "parent_id": 1,
+      "order_no": 11,
+      "menu_icon": "BiTask",
+      "icon_color": "#FBBF24",
+      "description": "Employee Task Management System and Activity with PiHR",
+      "has_child": 0
+    },
+    {
+      "id": 13,
+      "menu_name": "Notifications",
+      "menu_uid": "products/notifications",
+      "parent_id": 1,
+      "order_no": 12,
+      "menu_icon": "BiBell",
+      "icon_color": "#FBBF24",
+      "description": "Best HR Software with Mail Notification and Pop-up Feature",
+      "has_child": 0
+    },
+    {
+      "id": 14,
+      "menu_name": "Face Recognition",
+      "menu_uid": "products/face-recognition",
+      "parent_id": 1,
+      "order_no": 13,
+      "menu_icon": "FaIdBadge",
+      "icon_color": "#10B981",
+      "description": "Now access any of your office location globally with just a smile.",
+      "has_child": 0
+    }
+  ]
+}
+,
+
+  {
+    "id": 36,
+    "menu_name": "Devices",
+    "menu_uid": "devices",
+    "parent_id": 0,
+    "order_no": 3,
+    "menu_icon": null,
+    "has_child": 1,
+    "children": [
+     {
+  "id": 37,
+  "menu_name": "Hardware",
+  "menu_uid": "devices/hardware",
+  "parent_id": 36,
+  "order_no": 1,
+  "menu_icon": "FaMicrochip",
+  "icon_color": "#3B82F6",
+  "description": "Supported devices",
+  "has_child": 0
+},
+{
+  "id": 38,
+  "menu_name": "Brochure",
+  "menu_uid": "brochure",
+  "parent_id": 36,
+  "order_no": 2,
+  "menu_icon": "BiBook",
+  "icon_color": "#10B981",
+  "description": "Know more about Rysenova",
+  "has_child": 0
+}
+
+    ]
+  },
+  {
+    "id": 39,
+    "menu_name": "Pricing",
+    "menu_uid": "pricing",
+    "parent_id": 0,
+    "order_no": 4,
+    "menu_icon": null
+    
+  }, 
+   {
+    "id": 40,
+    "menu_name": "Blog",
+    "menu_uid": "blog",
+    "parent_id": 0,
+    "order_no": 5,
+    "menu_icon": null
+    
+  },
+    {
+    "id": 41,
+    "menu_name": "Contact",
+    "menu_uid": "contact",
+    "parent_id": 0,
+    "order_no": 6,
+    "menu_icon": null
+    
+  }
+]
