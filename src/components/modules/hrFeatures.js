@@ -8,7 +8,7 @@ const features = [
   {
     icon: "FaMapMarkerAlt",
     name: "Mobile Attendance Tracking with GPS",
-    desc: "The Rysenova app simplifies attendance management with accurate, real-time tools.",
+    desc: "The HR360 app simplifies attendance management with accurate, real-time tools.",
     points: [
       "GPS-based location tracking and biometric selfie attendance",
       "Cloud-synced data visible instantly on your dashboard",
