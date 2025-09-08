@@ -7,7 +7,7 @@ import Image from "next/image";
 const HeroSection = () => {
   return (
     <section 
-      className="bg-cover  bg-gradient-to-b from-sky-200 via-sky-100 to-white bg-center min-h-[120vh] pt-14"  // height barano
+      className="bg-cover  bg-gradient-to-b from-sky-200 via-sky-100 to-white bg-center min-h-[120vh] pt-32"  // height barano
       // style={{ backgroundImage: "url('/img/home/Banner.svg')" }}
     >
       <div className="container mx-auto px-4">

@@ -48,7 +48,7 @@ const EmployeeMonitoringPage = () => {
       <div className="container mx-auto  px-10 space-y-20">
 
         {/* Hero Section */}
-        <div className="flex flex-col md:flex-row items-center gap-6">
+        <div className="flex flex-col pt-16  md:flex-row items-center gap-6">
           <div className="flex-1 space-y-6 text-center md:text-left">
             <p className="text-base font-medium text-gray-600">Employee Monitoring</p>
             <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-gray-900 leading-tight tracking-tighter -mt-4">

@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 
@@ -70,16 +69,16 @@ export default function ClientsMarquee() {
         {/* Buttons centered below marquee */}
         <div className="flex justify-center gap-12 mt-16">
           {/* Get Started */}
-          <Link href="/get-started" className="flex items-center gap-2 bg-sky-500 hover:bg-sky-600 text-white font-semibold py-4 px-4 rounded-full transition">
+          <button className="flex items-center gap-2 bg-sky-500 hover:bg-sky-600 text-white font-semibold py-4 px-4 rounded-full transition">
             Get Started
             <FaArrowRight size={20} />
-          </Link>
+          </button>
 
           {/* Contact */}
-          <Link href="/contact" className="flex items-center border border-sky-500 gap-2 hover:bg-gray-100 text-sky-500 font-semibold py-4 px-7 rounded-full transition">
+          <button className="flex items-center border border-sky-500 gap-2 hover:bg-gray-100 text-sky-500 font-semibold py-4 px-4 rounded-full transition">
             Contact
             <FaArrowRight size={20} />
-          </Link>
+          </button>
         </div>
       </div>
     </>
