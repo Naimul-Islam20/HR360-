@@ -104,14 +104,14 @@ export default function Header() {
                     )}
 
                     {hasChildren && openDropdown === menu.id && (
-                     <div
+                 <div
   className={`
-    absolute top-full mt-8 bg-white shadow-lg border border-gray-300 z-50 p-6
     ${childCount > 10
-      ? "left-1/2 transform -translate-x-1/2 w-[90vw] max-w-[1600px] overflow-auto max-h-[80vh]"
-      : childCount > 5
-      ? "left-1/2 transform -translate-x-1/2 min-w-[700px]"
-      : "left-1/2 transform -translate-x-1/2 min-w-[280px]"
+      ? "fixed top-[100px] left-0 right-0 mx-auto w-[90vw] max-w-[1600px] bg-white shadow-lg border border-gray-300 z-50 p-6  max-h-[80vh]"
+      : "absolute top-full mt-8 bg-white shadow-lg border border-gray-300 z-50 p-6 " +
+        (childCount > 5
+          ? "left-1/2 transform -translate-x-1/2 min-w-[700px]"
+          : "left-1/2 transform -translate-x-1/2 min-w-[280px]")
     }
   `}
 >
@@ -147,6 +147,7 @@ export default function Header() {
     })}
   </div>
 </div>
+
 
                     )}
                   </li>
