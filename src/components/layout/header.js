@@ -104,52 +104,50 @@ export default function Header() {
                     )}
 
                     {hasChildren && openDropdown === menu.id && (
-                      <div
-                        className={`
-                          absolute top-full mt-8 bg-white shadow-lg border border-gray-300 z-50 p-6
-                          ${
-                            childCount > 10
-                              ? "left-7/1 transform -translate-x-4/4 w-[95vw] max-w-[1600px]"
-                              : childCount > 5
-                              ? "left-1/2 transform -translate-x-1/2 min-w-[700px]"
-                              : "left-1/2 transform -translate-x-1/2 min-w-[280px]"
-                          }
-                        `}
-                      >
-                        <div
-                          className={`grid gap-4 ${
-                            childCount > 10
-                              ? "grid-cols-3"
-                              : childCount > 5
-                              ? "grid-cols-2"
-                              : "grid-cols-1"
-                          }`}
-                        >
-                          {menu.children.map((child) => {
-                            const Icon = getIcon(child.menu_icon);
-                            return (
-                              <Link
-                                key={child.id}
-                                href={`/${child.menu_uid}`}
-                                className="flex items-start space-x-3 p-3 hover:bg-gray-100 rounded"
-                              >
-                                <Icon
-                                  style={{ color: child.icon_color }}
-                                  className="mt-1 w-5 h-5"
-                                />
-                                <div className="flex flex-col">
-                                  <span className="font-medium">
-                                    {child.menu_name}
-                                  </span>
-                                  <span className="text-[11px] mt-1 text-gray-500">
-                                    {child.description}
-                                  </span>
-                                </div>
-                              </Link>
-                            );
-                          })}
-                        </div>
-                      </div>
+                     <div
+  className={`
+    absolute top-full mt-8 bg-white shadow-lg border border-gray-300 z-50 p-6
+    ${childCount > 10
+      ? "left-1/2 transform -translate-x-1/2 w-[90vw] max-w-[1600px] overflow-auto max-h-[80vh]"
+      : childCount > 5
+      ? "left-1/2 transform -translate-x-1/2 min-w-[700px]"
+      : "left-1/2 transform -translate-x-1/2 min-w-[280px]"
+    }
+  `}
+>
+  <div
+    className={`grid gap-4 ${
+      childCount > 10
+        ? "grid-cols-3"
+        : childCount > 5
+        ? "grid-cols-2"
+        : "grid-cols-1"
+    }`}
+  >
+    {menu.children.map((child) => {
+      const Icon = getIcon(child.menu_icon);
+      return (
+        <Link
+          key={child.id}
+          href={`/${child.menu_uid}`}
+          className="flex items-start space-x-3 p-3 hover:bg-gray-100 rounded"
+        >
+          <Icon
+            style={{ color: child.icon_color }}
+            className="mt-1 w-5 h-5"
+          />
+          <div className="flex flex-col">
+            <span className="font-medium">{child.menu_name}</span>
+            <span className="text-[11px] mt-1 text-gray-500">
+              {child.description}
+            </span>
+          </div>
+        </Link>
+      );
+    })}
+  </div>
+</div>
+
                     )}
                   </li>
                 );
