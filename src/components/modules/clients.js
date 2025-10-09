@@ -42,7 +42,7 @@ export default function ClientsMarquee() {
         `}
       </style>
 
-      <div className="w-full bg-white py-5 md:py-16">
+      <div className="w-full bg-white py-5 md:py-16 px-4 md:px-18">
         {/* Title */}
         <div className="text-center mb-10 md:mb-12 px-4">
           <h2 className="text-sm md:text-md lg:text-xl text-[#2f2f57]">

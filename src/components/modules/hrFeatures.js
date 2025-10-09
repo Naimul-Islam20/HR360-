@@ -130,7 +130,7 @@ const features = [
 const HrFeatures = () => {
   return (
 <section className="py-2 md:py-12 bg-white">
-  <div className="max-w-7xl mx-auto px-4 md:px-12">
+  <div className="max-w-7xl mx-auto px-4 md:px-18">
     {/* Page Title */}
     <div className="text-center mb-6 md:mb-12 px-2">
       <h2 className="text-base sm:text-lg md:text-xl text-gray-500">
@@ -148,7 +148,7 @@ const HrFeatures = () => {
         return (
           <div
             key={index}
-            className="bg-white rounded-2xl p-3 sm:p-5 border border-gray-200 hover:shadow-lg hover:border-sky-500 transition duration-300 flex flex-col"
+            className="bg-white rounded-2xl p-3 sm:p-5 border border-gray-200  hover:border-sky-500 transition duration-300 flex flex-col"
           >
             <Icon className="text-3xl sm:text-4xl text-sky-500 mb-2 sm:mb-3" />
             <h3 className="text-lg sm:text-xl font-semibold text-[#141451] mb-1 sm:mb-2">

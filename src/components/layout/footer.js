@@ -6,8 +6,8 @@ import { FaLinkedin, FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa"
 
 export default function Footer() {
   return (
-    <footer className="bg-[#141451] text-gray-100 pt-12 md:pt-20">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-16 text-center md:text-left">
+    <footer className="bg-[#141451] text-gray-100 pt-12 md:pt-20 ">
+      <div className="max-w-7xl mx-auto px-4 md:px-18 md:px-12 grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-16 text-center md:text-left">
         {/* Contact Us */}
         <div className="space-y-4 md:space-y-7">
           <h3 className="text-lg font-semibold mb-2 md:mb-4">Contact Us</h3>

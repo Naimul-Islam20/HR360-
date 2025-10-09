@@ -255,7 +255,7 @@ export default function HR360Faq() {
       </section>
 
       {/* FAQ Grid */}
-      <section className="max-w-6xl mx-auto px-4 py-10 md:py-14 grid grid-cols-1 gap-3">
+      <section className="max-w-6xl mx-auto px-4 md:px-18 py-10 md:py-14 grid grid-cols-1 gap-3">
         {faqs.map((f) => (
           <FaqItem key={f.id} q={f.question} a={f.answer} />
         ))}
