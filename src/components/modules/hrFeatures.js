@@ -130,7 +130,7 @@ const features = [
 const HrFeatures = () => {
   return (
 <section className="py-2 md:py-12 bg-white">
-  <div className="max-w-7xl mx-auto px-4 md:px-12">
+  <div className="max-w-7xl mx-auto px-4 md:px-10">
     {/* Page Title */}
     <div className="text-center mb-6 md:mb-12 px-2">
       <h2 className="text-base sm:text-lg md:text-xl text-gray-500">

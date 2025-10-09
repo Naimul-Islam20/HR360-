@@ -8,7 +8,7 @@ import { AiOutlineCheckCircle } from "react-icons/ai";
 const HrApp = () => {
   return (
     <section className="relative bg-white py-12 md:py-20">
-      <div className="max-w-7xl mx-auto px-4 md:px-14">
+      <div className="max-w-7xl mx-auto px-4 md:px-10">
 
         {/* Flex container for 2 columns */}
         <div className="flex flex-col lg:flex-row items-start gap-8 md:gap-12 lg:gap-24">
