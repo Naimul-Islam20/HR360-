@@ -221,7 +221,7 @@ export default function HR360Faq() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <section className="max-w-6xl mx-auto px-4 pt-6 md:pt-20 text-center">
+      <section className="max-w-6xl mx-auto px-4 pt-6 md:pt-20 text-white text-center">
         <div className="space-y-4">
           <h1 className="text-3xl md:text-5xl text-[#141451] font-extrabold tracking-tight">
             FAQ
