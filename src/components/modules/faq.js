@@ -189,13 +189,13 @@ const faqs = [
 function FaqItem({ q, a }) {
   const [open, setOpen] = useState(false);
   return (
-    <div className="border border-gray-300 bg-white rounded-2xl overflow-hidden   transition">
+    <div className="border border-gray-300 bg-white text-blue rounded-2xl overflow-hidden   transition">
       <button
         className="w-full flex items-center justify-between gap-4 p-5 text-left"
         onClick={() => setOpen((s) => !s)}
         aria-expanded={open}
       >
-        <h3 className="font-semibold text-base md:text-lg leading-snug">{q}</h3>
+        <h3 className="font-semibold text-base md:text-lg text-gray-950 leading-snug">{q}</h3>
         <ChevronDown
           className={`shrink-0 transition-transform ${open ? "rotate-180" : "rotate-0"}`}
         />
@@ -209,7 +209,7 @@ function FaqItem({ q, a }) {
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.22, ease: "easeInOut" }}
           >
-            <div className="px-5 pb-5 pt-0 text-gray-700 leading-relaxed">{a}</div>
+            <div className="px-5 pb-5 pt-0 text-gray-700 text-blue leading-relaxed">{a}</div>
           </motion.div>
         )}
       </AnimatePresence>
@@ -221,7 +221,7 @@ export default function HR360Faq() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <section className="max-w-6xl mx-auto px-4 pt-6 md:pt-20 text-white text-center">
+      <section className="max-w-6xl mx-auto px-4 pt-6 md:pt-20 text-black text-center">
         <div className="space-y-4">
           <h1 className="text-3xl md:text-5xl text-[#141451] font-extrabold tracking-tight">
             FAQ
