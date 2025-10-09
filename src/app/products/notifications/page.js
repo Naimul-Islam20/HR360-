@@ -35,7 +35,7 @@ const notificationSections = [
 const NotificationsPage = () => {
   return (
     <section className="py-16 bg-gradient-to-b from-yellow-100 via-yellow-50 to-white">
-      <div className="container  mx-auto px-10 space-y-20">
+      <div className="space-y-20 px-4 md:px-64">
         {/* Hero Section */}
         <div className="flex  pt-16 flex-col md:flex-row items-center gap-6">
           {/* Left Side Text */}

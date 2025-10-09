@@ -75,20 +75,20 @@ const securitySections = [
 
 const SecurityPage = () => {
   return (
-    <section className="py-16 bg-gradient-to-b from-green-100 via-green-50 to-white">
-      <div className="container mx-auto px-10 space-y-20">
+    <section className="py-12 md:py-16 bg-gradient-to-b from-green-100 via-green-50 to-white">
+      <div className="space-y-12 md:space-y-20 px-4 sm:px-6 lg:px-32 xl:px-48 2xl:px-64">
 
         {/* Hero Section */}
-        <div className="flex  pt-16 flex-col md:flex-row items-center gap-6">
-          <div className="flex-1 space-y-6 text-center md:text-left">
+        <div className="flex flex-col md:flex-row items-center gap-6 md:gap-10 pt-12 md:pt-16">
+          <div className="flex-1 space-y-4 md:space-y-6 text-center md:text-left">
             <p className="text-base font-medium text-gray-600">Security</p>
-            <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-gray-900 leading-tight tracking-tighter -mt-4">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-snug -mt-2">
               HR360 Keep Your Data Safe and Confidential
             </h1>
-            <p className="text-gray-700 mt-4">
+            <p className="text-gray-700 text-sm sm:text-base md:text-base mt-2 md:mt-4">
               Employee management became secured and powerful by HR360 – Best HRIS software in Bangladesh. Employee location tracking, task management and all-in-one solution.
             </p>
-            <button className="px-6 py-3 bg-sky-500 text-white font-bold rounded-full hover:bg-sky-600 transition mt-4">
+            <button className="px-5 py-2 sm:px-6 sm:py-3 bg-sky-500 text-white font-bold rounded-full hover:bg-sky-600 transition mt-3 md:mt-4">
               Contact Us
             </button>
           </div>
@@ -106,23 +106,23 @@ const SecurityPage = () => {
 
         {/* Sections */}
         {securitySections.map((sec, idx) => (
-          <div key={idx} className="flex flex-col md:flex-row items-center gap-10">
+          <div key={idx} className="flex flex-col md:flex-row items-center gap-6 md:gap-10">
             {/* Text */}
-            <div className={`flex-1 space-y-6 text-left ${sec.imgRight ? "order-2 md:order-1" : "order-2 md:order-2"}`}>
-              <h2 className="text-4xl font-bold text-gray-900 -mt-2">{sec.heading}</h2>
-              <p className="text-gray-700">{sec.subText}</p>
-              <ul className="text-gray-700 space-y-4">
+            <div className={`flex-1 space-y-3 sm:space-y-4 text-left order-2 md:${sec.imgRight ? "order-1" : "order-2"}`}>
+              <h2 className="text-xl sm:text-2xl md:text-4xl font-bold text-gray-900 -mt-1 sm:-mt-2">{sec.heading}</h2>
+              <p className="text-gray-700 text-sm sm:text-base">{sec.subText}</p>
+              <ul className="text-gray-700 space-y-3 sm:space-y-4">
                 {sec.list.map((item, i) => (
-                  <li key={i} className="flex items-center gap-4 bg-white p-4 rounded-xl border border-gray-300">
-                    <AiOutlineCheckCircle className="text-sky-500 w-6 h-6 flex-shrink-0" />
-                    {item}
+                  <li key={i} className="flex items-start gap-3 sm:gap-4 bg-white p-3 sm:p-4 rounded-xl border border-gray-300">
+                    <AiOutlineCheckCircle className="text-sky-500 w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 mt-1" />
+                    <span className="text-sm sm:text-base">{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
 
             {/* Image */}
-            <div className={`flex-1 w-full ${sec.imgRight ? "order-1 md:order-2" : "order-1 md:order-1"}`}>
+            <div className={`flex-1 w-full order-1 md:${sec.imgRight ? "order-2" : "order-1"}`}>
               <Image 
                 src={sec.img}
                 alt={sec.heading}

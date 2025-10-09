@@ -4,7 +4,6 @@ import React from "react";
 import Image from "next/image";
 import { AiOutlineCheckCircle } from "react-icons/ai";
 
-// Section Content Array
 const taskSections = [
   {
     heading: "Employee Task Management",
@@ -81,30 +80,30 @@ const taskSections = [
 
 const TaskManagementPage = () => {
   return (
-    <section className="py-16 bg-gradient-to-b from-yellow-100 via-yellow-50 to-white">
-      <div className="container mx-auto px-10 space-y-20">
+    <section className="py-10 sm:py-16 bg-gradient-to-b from-yellow-100 via-yellow-50 to-white">
+      <div className="space-y-14 sm:space-y-20 px-4 sm:px-10 md:px-32 lg:px-64">
         {/* Hero Section */}
-        <div className="flex pt-16  flex-col md:flex-row items-center gap-6">
-          {/* Left Side Text */}
-          <div className="flex-1 space-y-6 text-center md:text-left">
-            <p className="text-base font-medium text-gray-600">
+        <div className="flex flex-col md:flex-row items-center gap-6 sm:gap-10 pt-10 sm:pt-16">
+          {/* Left Text */}
+          <div className="flex-1 space-y-4 sm:space-y-6 text-center md:text-left">
+            <p className="text-sm sm:text-base font-medium text-gray-600">
               Task Management
             </p>
-            <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-gray-900 leading-tight tracking-tighter -mt-4">
+            <h1 className="text-2xl sm:text-4xl md:text-6xl font-bold text-gray-900 leading-tight tracking-tight">
               Employee Task Management System
             </h1>
-            <p className="text-gray-700 mt-4">
+            <p className="text-gray-700 text-sm sm:text-base mt-2 sm:mt-4">
               A complete solution for assigning, tracking, and reporting tasks.
               Create activities, manage responsibilities, and improve workflow
               with HR360 — the all-in-one HR management system.
             </p>
-            <button className="px-6 py-3 bg-sky-500 text-white font-bold rounded-full hover:bg-sky-600 transition mt-4">
+            <button className="mx-auto md:mx-0 mt-3 sm:mt-4 bg-sky-500 hover:bg-sky-600 text-white font-bold py-2.5 sm:py-3 px-5 sm:px-6 rounded-full transition text-sm sm:text-base">
               Contact Us
             </button>
           </div>
 
-          {/* Right Side Image */}
-          <div className="flex-1 w-full">
+          {/* Right Image */}
+          <div className="flex-1 w-full mt-6 md:mt-0">
             <Image
               src="/img/products/task/task1.png"
               alt="Task Management"
@@ -115,41 +114,37 @@ const TaskManagementPage = () => {
           </div>
         </div>
 
-        {/* Sections */}
+        {/* Task Sections */}
         {taskSections.map((sec, idx) => (
           <div
             key={idx}
-            className="flex flex-col md:flex-row items-center gap-10"
+            className={`flex flex-col ${
+              sec.imgRight ? "md:flex-row-reverse" : "md:flex-row"
+            } items-center gap-6 sm:gap-10`}
           >
             {/* Text */}
-            <div
-              className={`flex-1 space-y-6 text-left ${
-                sec.imgRight ? "order-2 md:order-1" : "order-2 md:order-2"
-              }`}
-            >
-              <h2 className="text-4xl font-bold text-gray-900 -mt-2">
+            <div className="flex-1 space-y-3 sm:space-y-5 text-left">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
                 {sec.heading}
               </h2>
-              <p className="text-gray-700">{sec.subText}</p>
-              <ul className="text-gray-700 space-y-4">
+              <p className="text-gray-700 text-sm sm:text-base">
+                {sec.subText}
+              </p>
+              <ul className="text-gray-700 space-y-3">
                 {sec.list.map((item, i) => (
                   <li
                     key={i}
-                    className="flex items-center gap-4 bg-white p-4 rounded-xl border border-gray-300"
+                    className="flex items-center gap-3 bg-white p-3 sm:p-4 rounded-xl border border-gray-300 min-h-[70px]"
                   >
-                    <AiOutlineCheckCircle className="text-sky-500 w-6 h-6 flex-shrink-0" />
-                    {item}
+                    <AiOutlineCheckCircle className="text-sky-500 w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
+                    <span className="text-sm sm:text-base">{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
 
             {/* Image */}
-            <div
-              className={`flex-1 w-full ${
-                sec.imgRight ? "order-1 md:order-2" : "order-1 md:order-1"
-              }`}
-            >
+            <div className="flex-1 w-full mt-4 sm:mt-0">
               <Image
                 src={sec.img}
                 alt={sec.heading}
