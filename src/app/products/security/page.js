@@ -76,7 +76,7 @@ const securitySections = [
 const SecurityPage = () => {
   return (
     <section className="py-12 md:py-16 bg-gradient-to-b from-green-100 via-green-50 to-white">
-      <div className="space-y-12 md:space-y-20 px-4 sm:px-6 lg:px-32 xl:px-48 2xl:px-64">
+      <div className="space-y-12 md:space-y-20 px-4 sm:px-6 lg:px-42 xl:px-42 2xl:px-42">
 
         {/* Hero Section */}
         <div className="flex flex-col md:flex-row items-center gap-6 md:gap-10 pt-12 md:pt-16">

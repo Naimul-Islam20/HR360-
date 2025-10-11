@@ -60,7 +60,7 @@ const faceSections = [
 const FaceRecognitionPage = () => {
   return (
     <section className="py-16 bg-gradient-to-b from-green-200 via-green-100 to-white">
-      <div className="space-y-20 px-4 md:px-64">
+      <div className="space-y-20 px-4 md:px-42">
         {/* Hero Section */}
         <div className="flex  pt-16 flex-col md:flex-row items-center gap-6">
           {/* Left Side Text */}
