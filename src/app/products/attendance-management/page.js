@@ -53,7 +53,7 @@ const sections = [section1, section2, section3, section4];
 const Page = () => {
   return (
     <section className="py-16 bg-gradient-to-b from-blue-100 via-blue-50 to-white">
-      <div className="space-y-20 px-4 md:px-24">
+      <div className="space-y-20 px-4 md:px-40">
 
         {/* Hero Section */}
         <div className="flex flex-col md:flex-row pt-16 items-center gap-6 md:gap-10">

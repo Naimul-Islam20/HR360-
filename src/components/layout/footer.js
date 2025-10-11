@@ -89,7 +89,7 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="products/security" className="hover:underline">
+              <Link href="security" className="hover:underline">
                 Security
               </Link>
             </li>
