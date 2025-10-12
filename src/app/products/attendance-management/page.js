@@ -53,10 +53,11 @@ const sections = [section1, section2, section3, section4];
 const Page = () => {
   return (
     <section className="py-16 bg-gradient-to-b from-blue-100 via-blue-50 to-white">
-      <div className="space-y-20 px-4 md:px-42">
+      {/* ✅ Responsive padding for all devices */}
+      <div className="space-y-20 px-4 sm:px-6 md:px-10 lg:px-24 xl:px-36 2xl:px-48">
 
         {/* Hero Section */}
-        <div className="flex flex-col md:flex-row pt-16 items-center gap-6 md:gap-10">
+        <div className="flex flex-col md:flex-row pt-10 md:pt-16 items-center gap-6 md:gap-10">
           <div className="flex-1 space-y-6 text-center md:text-left">
             <p className="text-sm md:text-base font-medium text-gray-600">
               TIME & ATTENDANCE
