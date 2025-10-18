@@ -56,7 +56,7 @@ const shiftSections = [
 const ShiftManagementPage = () => {
   return (
     <section className="py-10 sm:py-16 bg-gradient-to-b from-red-100 via-red-50 to-white">
-      <div className="space-y-14 sm:space-y-20 px-4 sm:px-10 md:px-32 lg:px-64">
+      <div className="space-y-14 sm:space-y-20 px-4 sm:px-6 md:px-10 lg:px-24 xl:px-36 2xl:px-48">
         {/* Hero Section */}
         <div className="flex flex-col md:flex-row items-center gap-6 sm:gap-10 pt-10 sm:pt-16">
           {/* Left Content */}

@@ -61,7 +61,7 @@ const taxSections = [
 const TaxManagementPage = () => {
   return (
     <section className="py-16 bg-gradient-to-b from-red-100 via-red-50 to-white">
-      <div className="space-y-20 px-4 md:px-64">
+      <div className="space-y-20 px-4 sm:px-6 md:px-10 lg:px-24 xl:px-36 2xl:px-48">
 
         {/* Hero Section */}
         <div className="flex flex-col md:flex-row items-center pt-12 md:pt-16 gap-6 md:gap-10">

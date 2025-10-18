@@ -46,7 +46,7 @@ const expenseSections = [
 const ExpenseManagementPage = () => {
   return (
     <section className="py-16 bg-gradient-to-b from-green-200 via-green-100 to-white">
-      <div className="space-y-20 px-4 md:px-42">
+      <div className="space-y-20 px-4 sm:px-6 md:px-10 lg:px-24 xl:px-36 2xl:px-48">
         {/* Hero Section */}
         <div className="flex  pt-16 flex-col md:flex-row items-center gap-6">
           <div className="flex-1 space-y-6 text-center md:text-left">

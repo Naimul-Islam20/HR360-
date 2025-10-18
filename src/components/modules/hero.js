@@ -7,7 +7,7 @@ const HeroSection = () => {
     <section
       className="bg-cover bg-gradient-to-b from-sky-200 via-sky-100 to-white bg-center min-h-[110vh]  pt-32"
     >
-      <div className="container mx-auto px-4 md:px-38">
+      <div className=" px-4 sm:px-6 md:px-10 lg:px-24 xl:px-36 2xl:px-48">
         <div className="flex flex-col lg:flex-row items-center md:items-start gap-12">
           
           {/* Left Column - Text */}

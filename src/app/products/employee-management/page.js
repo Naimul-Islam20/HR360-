@@ -74,7 +74,7 @@ const employeeManagementSections = [
 const EmployeeManagementPage = () => {
   return (
     <section className="py-16 bg-gradient-to-b from-red-100 via-red-50 to-white">
-      <div className="space-y-20 px-4 md:px-42">
+      <div className="space-y-20 px-4 sm:px-6 md:px-10 lg:px-24 xl:px-36 2xl:px-48">
 
         {/* Hero Section */}
         <div className="flex flex-col  pt-16  md:flex-row items-center gap-6">
