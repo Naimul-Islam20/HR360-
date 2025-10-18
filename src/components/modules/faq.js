@@ -197,7 +197,7 @@ function FaqItem({ q, a }) {
       >
         <h3 className="font-semibold text-base md:text-lg text-gray-950 leading-snug">{q}</h3>
         <ChevronDown
-          className={`shrink-0 transition-transform ${open ? "rotate-180" : "rotate-0"}`}
+          className={`shrink-0 text-gray-800 transition-transform ${open ? "rotate-180" : "rotate-0"}`}
         />
       </button>
 

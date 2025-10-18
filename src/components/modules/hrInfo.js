@@ -12,7 +12,7 @@ const Hr360Info = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
           
           {/* ✅ Left Column - Text */}
-          <div className="ms-2 sm:ms-6 lg:ms-10 space-y-3 order-1">
+          <div className="  lg:ms-10 space-y-3 order-1">
             <h2 className="text-sm sm:text-base font-bold text-gray-500 uppercase tracking-wide">
               WHAT IS HR360?
             </h2>

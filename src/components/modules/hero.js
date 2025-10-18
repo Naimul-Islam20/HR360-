@@ -11,7 +11,7 @@ const HeroSection = () => {
         <div className="flex flex-col lg:flex-row items-center md:items-start gap-12">
           
           {/* Left Column - Text */}
-          <div className="flex-1 ps-3 space-y-6 text-center lg:text-left">
+          <div className="flex-1  space-y-6 text-center lg:text-left">
             {/* Heading */}
             <h1 className="text-blue-900 text-base sm:text-lg md:text-xl font-bold inline">
               You’ve come to the right place!

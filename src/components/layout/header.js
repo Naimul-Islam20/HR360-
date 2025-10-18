@@ -55,7 +55,7 @@ export default function Header() {
     scrolled ? "bg-white/90 backdrop-blur-md shadow-sm" : "bg-transparent "
   }`}
     >
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-17 xl:px-24 2xl:px-30">
         <div className="flex justify-between items-center h-22">
           {/* Logo */}
           <div className="flex items-center">
@@ -84,7 +84,7 @@ export default function Header() {
                   >
                     {hasChildren ? (
                       <div
-                        className="flex items-center cursor-pointer font-medium hover:text-blue-600"
+                        className="flex items-center cursor-pointer font-medium text-gray-800 hover:text-blue-600"
                         onClick={() =>
                           setOpenDropdown(
                             openDropdown === menu.id ? null : menu.id
@@ -97,7 +97,7 @@ export default function Header() {
                     ) : (
                       <Link
                         href={`/${menu.menu_uid}`}
-                        className="font-medium hover:text-blue-600"
+                        className="font-medium text-gray-800 hover:text-blue-600"
                       >
                         {menu.menu_name}
                       </Link>
@@ -107,11 +107,11 @@ export default function Header() {
                  <div
   className={`
     ${childCount > 10
-      ? "fixed top-[100px] left-0 right-0 mx-auto w-[90vw] max-w-[1600px] bg-white shadow-lg border border-gray-300 z-50 p-6  max-h-[80vh]"
-      : "absolute top-full mt-8 bg-white shadow-lg border border-gray-300 z-50 p-6 " +
+      ? "fixed text-gray-800 top-[100px] left-0 right-0 mx-auto w-[90vw] max-w-[1600px] bg-white shadow-lg border border-gray-300 z-50 p-6  max-h-[80vh]"
+      : "absolute top-full mt-8 text-gray-800 bg-white shadow-lg border border-gray-300 z-50 p-6 " +
         (childCount > 5
-          ? "left-1/2 transform -translate-x-1/2 min-w-[700px]"
-          : "left-1/2 transform -translate-x-1/2 min-w-[280px]")
+          ? "left-1/2 transform text-gray-800 -translate-x-1/2 min-w-[700px]"
+          : "left-1/2 transform text-gray-800 -translate-x-1/2 min-w-[280px]")
     }
   `}
 >
