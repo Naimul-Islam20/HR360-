@@ -51,9 +51,7 @@ export default function Header() {
   return (
     <nav
      ref={navRef}
-  className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-    scrolled ? "bg-white/90 backdrop-blur-md shadow-sm" : "bg-transparent "
-  }`}
+  className="sticky top-0 left-0 w-full z-50 transition-all duration-300 bg-white/90 backdrop-blur-md shadow-sm"
     >
       <div className="container">
         <div className="flex justify-between items-center h-22">

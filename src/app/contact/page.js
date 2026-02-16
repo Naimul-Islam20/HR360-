@@ -5,7 +5,7 @@ import { Mail, Phone, MapPin } from "lucide-react";
 
 export default function ContactPage() {
   return (
-    <main className="pt-32 pb-12 bg-gray-50">
+    <main className="py-10 md:py-16 bg-gray-50">
       <div className="container">
         {/* Header Section */}
         <div className="text-center mb-12">
@@ -13,7 +13,7 @@ export default function ContactPage() {
             Contact Us
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+            Have questions? We&apos;d love to hear from you. Send us a message and we&apos;ll respond as soon as possible.
           </p>
         </div>
 

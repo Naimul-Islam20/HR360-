@@ -28,7 +28,7 @@ export default function BlogDetailsPage() {
   const relatedPosts = blogsData.filter((b) => b.id !== blog.id).slice(0, 3);
 
   return (
-    <main className="pt-32 pb-16 bg-white min-h-screen">
+    <main className="py-10 md:py-16 bg-white min-h-screen">
       {/* Header / Breadcrumb */}
       <div className="container mb-8">
         <Link 
