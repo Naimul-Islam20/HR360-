@@ -67,7 +67,7 @@ const payrollSections = [
 const PayrollPage = () => {
   return (
     <section className="py-16 bg-gradient-to-b from-cyan-100 via-cyan-50 to-white">
-      <div className="space-y-20 px-4 sm:px-6 md:px-10 lg:px-24 xl:px-36 2xl:px-48">
+      <div className="space-y-20 container">
 
         {/* Hero Section */}
         <div className="flex  pt-16 flex-col md:flex-row items-center gap-6">

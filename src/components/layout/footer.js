@@ -7,7 +7,7 @@ import { FaLinkedin, FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa"
 export default function Footer() {
   return (
     <footer className="bg-[#141451] text-gray-100 pt-12 md:pt-20 ">
-      <div className="max-w-7xl mx-auto px-4 md:px-10  grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-16 text-center md:text-left">
+      <div className="container grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-16 text-center md:text-left">
         {/* Contact Us */}
         <div className="space-y-4 md:space-y-7">
           <h3 className="text-lg font-semibold mb-2 md:mb-4">Contact Us</h3>
@@ -131,7 +131,7 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="border-t border-gray-600 mt-6 py-4">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center md:justify-between px-6 md:px-12 text-center md:text-left gap-4 md:gap-0">
+        <div className="container flex flex-col md:flex-row items-center justify-center md:justify-between text-center md:text-left gap-4 md:gap-0">
           {/* Left: Logo + copyright */}
           <div className="flex flex-col md:flex-row items-center md:items-center gap-2 md:gap-4">
             <Image src="/hr360-logo.png" alt="HR360 Logo" width={100} height={70} />

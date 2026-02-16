@@ -186,7 +186,7 @@ export default function DevicesPage() {
 
   return (
     <section className="bg-white py-16">
-      <div className="  px-4 sm:px-6 md:px-10 lg:px-24 xl:px-36 2xl:px-48">
+      <div className="  container">
         {/* Header with Left & Right */}
         <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-12 gap-6">
           {/* Left Side */}

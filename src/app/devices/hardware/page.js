@@ -8,7 +8,7 @@ import DevicesPage from "./devices";
 export default function HardwarePage() {
   return (
     <section className="bg-white py-16">
-      <div className=" px-4 sm:px-6 md:px-10 lg:px-24 xl:px-36 2xl:px-48 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className=" container grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         
         {/* Left Column - Text */}
         <div>

@@ -55,7 +55,7 @@ export default function Header() {
     scrolled ? "bg-white/90 backdrop-blur-md shadow-sm" : "bg-transparent "
   }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-17 xl:px-24 2xl:px-30">
+      <div className="container">
         <div className="flex justify-between items-center h-22">
           {/* Logo */}
           <div className="flex items-center">
@@ -63,7 +63,7 @@ export default function Header() {
               <Image
                 src="/hr360-logo.png"
                 alt="HR360 Logo"
-                width={140}
+                width={120}
                 height={40}
                 priority
               />

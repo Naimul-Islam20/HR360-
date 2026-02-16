@@ -6,8 +6,8 @@ import { AiOutlineCheckCircle } from "react-icons/ai";
 
 const Hr360Info = () => {
   return (
-    <section className="py-10 md:py-20 bg-white">
-      <div className="px-4 sm:px-6 md:px-10 lg:px-24 xl:px-36 2xl:px-48">
+    <section className="py-10 md:py-16 bg-white">
+      <div className="container">
         {/* Grid layout */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
           

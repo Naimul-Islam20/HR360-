@@ -54,7 +54,7 @@ const Page = () => {
   return (
     <section className="py-16 bg-gradient-to-b from-blue-100 via-blue-50 to-white">
       {/* ✅ Responsive padding for all devices */}
-      <div className="space-y-20 px-4 sm:px-6 md:px-10 lg:px-24 xl:px-36 2xl:px-48">
+      <div className="space-y-20 container">
 
         {/* Hero Section */}
         <div className="flex flex-col md:flex-row pt-10 md:pt-16 items-center gap-6 md:gap-10">

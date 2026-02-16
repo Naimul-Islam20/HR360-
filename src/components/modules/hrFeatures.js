@@ -129,8 +129,8 @@ const features = [
 
 const HrFeatures = () => {
   return (
-<section className="py-2 md:py-12 bg-white">
-  <div className="px-4 sm:px-6 md:px-10 lg:px-24 xl:px-36 2xl:px-48">
+<section className="py-10 md:py-16 bg-white">
+  <div className="container">
     {/* Page Title */}
     <div className="text-center mb-6 md:mb-12 px-2">
       <h2 className="text-base sm:text-lg md:text-xl text-gray-500">

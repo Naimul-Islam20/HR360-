@@ -105,7 +105,7 @@ export default function PricingPage() {
 
   return (
     <section className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6 text-center">
+      <div className="container text-center">
         {/* Pricing Header */}
         <h2 className="text-md tracking-widest text-gray-400 font-bold mb-4">Pricing</h2>
         <p className="text-4xl font-semibold text-black mb-12">

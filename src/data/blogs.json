@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "title": "The Future of HR Management in Bangladesh",
+    "slug": "future-of-hr-management-bangladesh",
+    "excerpt": "Discover how digital transformation is reshaping human resource management in the local business landscape.",
+    "content": "Full content of the blog post goes here...",
+    "category": "HR Trends",
+    "author": "Aminul Islam",
+    "date": "2024-02-15",
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop",
+    "readTime": "5 min read"
+  },
+  {
+    "id": 2,
+    "title": "Maximizing Productivity with Automated Payroll",
+    "slug": "maximizing-productivity-automated-payroll",
+    "excerpt": "Learn how automated payroll systems reduce errors and save valuable administrative time for your HR team.",
+    "content": "Full content of the blog post goes here...",
+    "category": "Payroll",
+    "author": "Sarah Ahmed",
+    "date": "2024-02-10",
+    "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1911&auto=format&fit=crop",
+    "readTime": "4 min read"
+  },
+  {
+    "id": 3,
+    "title": "Navigating Bangladesh Labor Law 2024",
+    "slug": "navigating-bangladesh-labor-law-2024",
+    "excerpt": "A comprehensive guide to the latest updates in labor regulations and how businesses can stay compliant.",
+    "content": "Full content of the blog post goes here...",
+    "category": "Compliance",
+    "author": "Barrister Rahman",
+    "date": "2024-01-28",
+    "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2070&auto=format&fit=crop",
+    "readTime": "7 min read"
+  },
+  {
+    "id": 4,
+    "title": "Employee Engagement in a Remote Work Era",
+    "slug": "employee-engagement-remote-work",
+    "excerpt": "Best practices for keeping your team motivated and connected while working from different locations in Bangladesh.",
+    "content": "Full content of the blog post goes here...",
+    "category": "Culture",
+    "author": "Nusrat Jahan",
+    "date": "2024-01-20",
+    "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop",
+    "readTime": "6 min read"
+  },
+  {
+    "id": 5,
+    "title": "The Impact of AI on Recruitment",
+    "slug": "impact-of-ai-on-recruitment",
+    "excerpt": "How artificial intelligence is helping companies find the right talent faster and more efficiently than ever before.",
+    "category": "Technology",
+    "author": "Fahim Shahriar",
+    "date": "2024-01-15",
+    "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=2070&auto=format&fit=crop",
+    "readTime": "5 min read"
+  },
+  {
+    "id": 6,
+    "title": "Building a Modern Workplace Culture",
+    "slug": "building-modern-workplace-culture",
+    "excerpt": "Why culture is the most important asset for your company and how HR360 helps you nurture it effectively.",
+    "category": "Culture",
+    "author": "Tanvir Hasan",
+    "date": "2024-01-05",
+    "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop",
+    "readTime": "4 min read"
+  }
+]

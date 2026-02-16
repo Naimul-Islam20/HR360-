@@ -221,7 +221,7 @@ export default function HR360Faq() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <section className="max-w-6xl mx-auto px-4 pt-6 md:pt-20 text-black text-center">
+      <section className="container pt-10 md:pt-16 pb-6 text-black text-center">
         <div className="space-y-4">
           <h1 className="text-3xl md:text-5xl text-[#141451] font-extrabold tracking-tight">
             FAQ
@@ -255,7 +255,7 @@ export default function HR360Faq() {
       </section>
 
       {/* FAQ Grid */}
-      <section className="max-w-6xl mx-auto px-4 md:px-18 py-10 md:py-14 grid grid-cols-1 gap-3">
+      <section className="container pb-10 md:pb-16 grid grid-cols-1 gap-3">
         {faqs.map((f) => (
           <FaqItem key={f.id} q={f.question} a={f.answer} />
         ))}

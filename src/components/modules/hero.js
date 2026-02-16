@@ -5,9 +5,9 @@ import Image from "next/image";
 const HeroSection = () => {
   return (
     <section
-      className="bg-cover bg-gradient-to-b from-sky-200 via-sky-100 to-white bg-center min-h-[110vh]  pt-32"
+      className="bg-cover bg-gradient-to-b from-sky-200 via-sky-100 to-white bg-center pt-32 pb-10 md:pb-16 flex items-center"
     >
-      <div className=" px-4 sm:px-6 md:px-10 lg:px-24 xl:px-36 2xl:px-48">
+      <div className="container">
         <div className="flex flex-col lg:flex-row items-center md:items-start gap-12">
           
           {/* Left Column - Text */}

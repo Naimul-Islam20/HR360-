@@ -45,7 +45,7 @@ const monitoringSections = [
 const EmployeeMonitoringPage = () => {
   return (
     <section className="py-16 bg-gradient-to-b from-violet-200 via-violet-100 to-white">
-      <div className="space-y-20 px-4 sm:px-6 md:px-10 lg:px-24 xl:px-36 2xl:px-48">
+      <div className="space-y-20 container">
 
         {/* Hero Section */}
         <div className="flex flex-col pt-16  md:flex-row items-center gap-6">
