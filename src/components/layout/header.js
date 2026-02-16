@@ -105,7 +105,7 @@ export default function Header() {
                  <div
   className={`
     ${childCount > 10
-      ? "fixed text-gray-800 top-[100px] left-0 right-0 mx-auto w-[90vw] max-w-[1600px] bg-white shadow-lg border border-gray-300 z-50 p-6  max-h-[80vh]"
+      ? "fixed text-gray-800 top-[88px] left-0 right-0 mx-auto w-[90vw] max-w-[1600px] bg-white shadow-lg border border-gray-300 z-50 p-6  max-h-[80vh]"
       : "absolute top-full mt-8 text-gray-800 bg-white shadow-lg border border-gray-300 z-50 p-6 " +
         (childCount > 5
           ? "left-1/2 transform text-gray-800 -translate-x-1/2 min-w-[700px]"
@@ -129,6 +129,7 @@ export default function Header() {
           key={child.id}
           href={`/${child.menu_uid}`}
           className="flex items-start space-x-3 p-3 hover:bg-gray-100 rounded"
+          onClick={() => setOpenDropdown(null)}
         >
           <Icon
             style={{ color: child.icon_color }}

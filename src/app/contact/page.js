@@ -117,20 +117,20 @@ export default function ContactPage() {
             </form>
           </div>
         </div>
+      </div>
 
-        {/* Map Section */}
-        <div className="mt-16 rounded-2xl overflow-hidden shadow-sm border border-gray-100 h-[450px]">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.165416248358!2d91.79157267566735!3d22.347318841193356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd9184285b54d%3A0x6b44a8fc37812546!2sAgrabad%2C%20Chattogram!5e0!3m2!1sen!2sbd!4v1708064500000!5m2!1sen!2sbd"
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="HR360 Office Location"
-          ></iframe>
-        </div>
+      {/* Map Section - Full Width */}
+      <div className="mt-16 h-[450px] w-full border-t border-b border-gray-100">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3690.165416248358!2d91.79157267566735!3d22.347318841193356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd9184285b54d%3A0x6b44a8fc37812546!2sAgrabad%2C%20Chattogram!5e0!3m2!1sen!2sbd!4v1708064500000!5m2!1sen!2sbd"
+          width="100%"
+          height="100%"
+          style={{ border: 0 }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          title="HR360 Office Location"
+        ></iframe>
       </div>
     </main>
   );

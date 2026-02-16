@@ -2,160 +2,152 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { FaLinkedin, FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaLinkedinIn, FaFacebookF, FaInstagram, FaYoutube, FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#141451] text-gray-100 pt-12 md:pt-20 ">
-      <div className="container grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-16 text-center md:text-left">
-        {/* Contact Us */}
-        <div className="space-y-4 md:space-y-7">
-          <h3 className="text-lg font-semibold mb-2 md:mb-4">Contact Us</h3>
-          <p>House 39 (Level 4), Road 8, Block k, Halishahar, Aghrabad, Chitagong</p>
-          <p>
-            <Link href="mailto:biz.dev@hr360.com" className="underline">
-              biz.dev@hr360.com
-            </Link>
-          </p>
-          <p>+880 17 1342 8432 (Sales)</p>
-          <p>+880 9606 881188 (Support)</p>
-          <p>Trade License: TRAD/DNCC/029071/2023</p>
-        </div>
+    <footer className="bg-[#0f0f3d] text-gray-300">
+      {/* Main Footer Content */}
+      <div className="pt-20 pb-12">
+        <div className="container">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+            
+            {/* Column 1: Brand & Contact */}
+            <div className="space-y-8">
+              <Link href="/" className="inline-block">
+                <Image src="/hr360-logo.png" alt="HR360 Logo" width={140} height={40} className="brightness-200" />
+              </Link>
+              <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
+                The most advanced and comprehensive HR & Payroll management system in Bangladesh. 
+                Trusted by hundreds of leading businesses nationwide.
+              </p>
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <FaMapMarkerAlt className="text-sky-500 mt-1 flex-shrink-0" />
+                  <p className="text-sm">House 39 (Level 4), Road 8, Block k, Halishahar, Aghrabad, Chattogram</p>
+                </div>
+                <div className="flex items-center gap-3">
+                  <FaEnvelope className="text-sky-500 flex-shrink-0" />
+                  <Link href="mailto:biz.dev@hr360.com" className="text-sm hover:text-sky-500 transition-colors">
+                    biz.dev@hr360.com
+                  </Link>
+                </div>
+                <div className="flex items-center gap-3">
+                  <FaPhoneAlt className="text-sky-500 flex-shrink-0" />
+                  <p className="text-sm">+880 17 1342 8432 (Sales)</p>
+                </div>
+              </div>
+            </div>
 
-        {/* Features */}
-        <div className="space-y-4 md:space-y-7">
-          <h3 className="text-lg font-semibold mb-2 md:mb-4">Features</h3>
-          <ul className="space-y-3 md:space-y-6">
-            <li>
-              <Link href="products/attendance-management" className="hover:underline">
-                Attendance Management Software
-              </Link>
-            </li>
-            <li>
-              <Link href="products/shift-management" className="hover:underline">
-                Shift Management Employee
-              </Link>
-            </li>
-            <li>
-              <Link href="products/leaves-management" className="hover:underline">
-                Leave Application
-              </Link>
-            </li>
-            <li>
-              <Link href="products/payroll" className="hover:underline">
-                Payroll Software
-              </Link>
-            </li>
-            <li>
-              <Link href="products/tax-management" className="hover:underline">
-                Tax Management
-              </Link>
-            </li>
-            <li>
-              <Link href="products/expense-management" className="hover:underline">
-                Expense Management
-              </Link>
-            </li>
-          </ul>
-        </div>
+            {/* Column 2: Solutions */}
+            <div>
+              <h3 className="text-white text-lg font-bold mb-8 relative inline-block">
+                Solutions
+                <span className="absolute -bottom-2 left-0 w-8 h-1 bg-sky-500 rounded-full"></span>
+              </h3>
+              <ul className="space-y-4">
+                {[
+                  { name: "Attendance Management", href: "/products/attendance-management" },
+                  { name: "Payroll Software", href: "/products/payroll" },
+                  { name: "Shift Management", href: "/products/shift-management" },
+                  { name: "Leave Management", href: "/products/leaves-management" },
+                  { name: "Tax Management", href: "/products/tax-management" },
+                  { name: "Expense Tracking", href: "/products/expense-management" },
+                ].map((item) => (
+                  <li key={item.name}>
+                    <Link href={item.href} className="text-sm hover:text-sky-500 hover:translate-x-1 inline-block transition-all">
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
 
-        {/* More Features */}
-        <div className="space-y-4 md:space-y-7">
-          <h3 className="text-lg font-semibold mb-2 md:mb-4">More Features</h3>
-          <ul className="space-y-3 md:space-y-6">
-            <li>
-              <Link href="#" className="hover:underline">
-                Employee Management Tool
-              </Link>
-            </li>
-            <li>
-              <Link href="products/employee-tracking" className="hover:underline">
-                Employee Tracking
-              </Link>
-            </li>
-            <li>
-              <Link href="products/task-management" className="hover:underline">
-                Task Management
-              </Link>
-            </li>
-            <li>
-              <Link href="products/digital-notice-board" className="hover:underline">
-                Digital Notice Board
-              </Link>
-            </li>
-            <li>
-              <Link href="products/notifications" className="hover:underline">
-                Notifications
-              </Link>
-            </li>
-            <li>
-              <Link href="security" className="hover:underline">
-                Security
-              </Link>
-            </li>
-            <li>
-              <Link href="products/face-recognition" className="hover:underline">
-                Face Recognition
-              </Link>
-            </li>
-          </ul>
-        </div>
+            {/* Column 3: Features */}
+            <div>
+              <h3 className="text-white text-lg font-bold mb-8 relative inline-block">
+                Features
+                <span className="absolute -bottom-2 left-0 w-8 h-1 bg-sky-500 rounded-full"></span>
+              </h3>
+              <ul className="space-y-4">
+                {[
+                  { name: "Employee Tracking", href: "/products/employee-tracking" },
+                  { name: "Task Management", href: "/products/task-management" },
+                  { name: "Digital Notice Board", href: "/products/digital-notice-board" },
+                  { name: "Face Recognition", href: "/products/face-recognition" },
+                  { name: "Security & Access", href: "/products/security" },
+                  { name: "Push Notifications", href: "/products/notifications" },
+                ].map((item) => (
+                  <li key={item.name}>
+                    <Link href={item.href} className="text-sm hover:text-sky-500 hover:translate-x-1 inline-block transition-all">
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
 
-        {/* Explore */}
-        <div className="space-y-4 md:space-y-7">
-          <h3 className="text-lg font-semibold mb-2 md:mb-4">Explore</h3>
-          <ul className="space-y-3 md:space-y-6">
-            <li>
-              <Link href="/pricing" className="hover:underline">
-                Pricing
-              </Link>
-            </li>
-            <li>
-              <Link href="/blog" className="hover:underline">
-                Blog
-              </Link>
-            </li>
-            <li>
-              <Link href="/contact" className="hover:underline">
-                Contact Us
-              </Link>
-            </li>
-            <li>
-              <Link href="/about" className="hover:underline">
-                About Us
-              </Link>
-            </li>
-          </ul>
+            {/* Column 4: Company */}
+            <div>
+              <h3 className="text-white text-lg font-bold mb-8 relative inline-block">
+                Company
+                <span className="absolute -bottom-2 left-0 w-8 h-1 bg-sky-500 rounded-full"></span>
+              </h3>
+              <ul className="space-y-4">
+                {[
+                  { name: "About Us", href: "/about" },
+                  { name: "Our Pricing", href: "/pricing" },
+                  { name: "Official Blog", href: "/blog" },
+                  { name: "Contact Support", href: "/contact" },
+                  { name: "Message from MD", href: "/about/message-from-md" },
+                  { name: "Career", href: "/career" },
+                ].map((item) => (
+                  <li key={item.name}>
+                    <Link href={item.href} className="text-sm hover:text-sky-500 hover:translate-x-1 inline-block transition-all">
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-8 pt-8 border-t border-gray-800">
+                <h4 className="text-white text-sm font-bold mb-4">Follow Our Socials</h4>
+                <div className="flex gap-3">
+                  {[
+                    { icon: <FaLinkedinIn />, href: "#" },
+                    { icon: <FaFacebookF />, href: "#" },
+                    { icon: <FaInstagram />, href: "#" },
+                    { icon: <FaYoutube />, href: "#" },
+                  ].map((social, idx) => (
+                    <Link 
+                      key={idx} 
+                      href={social.href} 
+                      className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center text-xs hover:bg-sky-500 hover:text-white transition-all shadow-sm"
+                    >
+                      {social.icon}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-gray-600 mt-6 py-4">
-        <div className="container flex flex-col md:flex-row items-center justify-center md:justify-between text-center md:text-left gap-4 md:gap-0">
-          {/* Left: Logo + copyright */}
-          <div className="flex flex-col md:flex-row items-center md:items-center gap-2 md:gap-4">
-            <Image src="/hr360-logo.png" alt="HR360 Logo" width={100} height={70} />
-            <p className="text-sm">
-              © {new Date().getFullYear()} HR360 |{' '}
-              <Link href="https://muktodhara.com" className="underline hover:text-sky-500">
-                Muktodhara Technology Limited
-              </Link>
-            </p>
-          </div>
-
-          {/* Right: Social icons */}
-          <div className="flex gap-4 mt-4 md:mt-0 justify-center md:justify-end">
-            <Link href="#" className="hover:text-sky-500">
-              <FaLinkedin size={18} />
+      <div className="border-t border-gray-800 py-8 bg-[#0a0a2b]">
+        <div className="container flex flex-col md:flex-row items-center justify-between gap-6">
+          <p className="text-sm text-gray-500">
+            © {new Date().getFullYear()} HR360. All rights reserved. | Developed by{' '}
+            <Link href="https://muktodhara.com" className="text-gray-400 hover:text-sky-500 transition-colors font-medium">
+              Muktodhara Technology Limited
             </Link>
-            <Link href="#" className="hover:text-sky-500">
-              <FaFacebookF size={18} />
+          </p>
+          <div className="flex gap-8">
+            <Link href="/privacy-policy" className="text-xs text-gray-500 hover:text-sky-500 transition-colors">
+              Privacy Policy
             </Link>
-            <Link href="#" className="hover:text-sky-500">
-              <FaInstagram size={18} />
-            </Link>
-            <Link href="#" className="hover:text-sky-500">
-              <FaYoutube size={18} />
+            <Link href="/terms-of-service" className="text-xs text-gray-500 hover:text-sky-500 transition-colors">
+              Terms of Service
             </Link>
           </div>
         </div>
