@@ -98,7 +98,7 @@ const ShiftManagementPage = () => {
                 </span>
               </h1>
               <p className="text-gray-600 text-base md:text-xl leading-relaxed max-w-2xl mx-auto md:mx-0">
-                The ultimate solution for roster setup, shift duties, and attendance management. Streamline your company's workforce scheduling with ease using HR360.
+                The ultimate solution for roster setup, shift duties, and attendance management. Streamline your company&apos;s workforce scheduling with ease using HR360.
               </p>
               <div className="flex flex-wrap justify-center md:justify-start gap-4 pt-4">
                 <button className="px-8 py-4 bg-rose-600 text-white font-bold rounded-2xl hover:bg-rose-700 shadow-xl shadow-rose-200 transition-all hover:scale-105 active:scale-95 text-sm md:text-base">

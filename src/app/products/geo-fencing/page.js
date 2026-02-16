@@ -78,7 +78,7 @@ export default function GeoFencingPage() {
                 </span>
               </h1>
               <p className="text-gray-600 text-base md:text-xl leading-relaxed max-w-2xl mx-auto md:mx-0">
-                Ensure your workforce is where they need to be. defining virtual boundaries and validating attendance locations in real-time with HR360's advanced geo-fencing technology.
+                Ensure your workforce is where they need to be. defining virtual boundaries and validating attendance locations in real-time with HR360&apos;s advanced geo-fencing technology.
               </p>
               <div className="flex flex-wrap justify-center md:justify-start gap-4 pt-4">
                 <button className="px-8 py-4 bg-emerald-600 text-white font-bold rounded-2xl hover:bg-emerald-700 shadow-xl shadow-emerald-200 transition-all hover:scale-105 active:scale-95 text-sm md:text-base">
