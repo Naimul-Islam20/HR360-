@@ -82,7 +82,7 @@ const TaskManagementPage = () => {
   return (
     <main className="bg-white">
       {/* Hero Section with Unique Background & Patterns */}
-      <section className="relative overflow-hidden bg-amber-50 pt-10 md:pt-16 pb-10 md:pb-24">
+      <section className="relative overflow-hidden bg-amber-50 pt-10 md:pt-12 pb-10 md:pb-24">
         
         {/* Background Decorative Elements */}
         {/* 1. Slanted Accent */}

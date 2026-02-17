@@ -57,7 +57,7 @@ const ShiftManagementPage = () => {
   return (
     <main className="bg-white">
       {/* Hero Section with Unique Background & Patterns */}
-      <section className="relative overflow-hidden bg-rose-50 pt-10 md:pt-10 pb-10 md:pb-20">
+      <section className="relative overflow-hidden bg-rose-50 pt-10 md:pt-6 pb-10 md:pb-16">
         
         {/* Background Decorative Elements */}
         {/* 1. Slanted Accent */}

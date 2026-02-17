@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <section className="relative overflow-hidden bg-sky-50 pt-16 md:pt-28 pb-16 md:pb-28 flex items-center">
+    <section className="relative overflow-hidden bg-sky-50 pt-8 md:pt-12 pb-16 md:pb-28 flex items-center">
       
       {/* Background Decorative Elements */}
       {/* 1. Slanted Accent */}
