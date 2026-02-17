@@ -67,7 +67,7 @@ const EmployeeLeavePage = () => {
   return (
     <main className="bg-white">
       {/* Hero Section with Unique Background & Patterns */}
-      <section className="relative overflow-hidden bg-orange-50 pt-10 md:pt-0 pb-10 md:pb-20">
+      <section className="relative overflow-hidden bg-orange-50 pt-8 md:pt-0 pb-10 md:pb-20">
         
         {/* Background Decorative Elements */}
         {/* 1. Slanted Accent */}
@@ -95,7 +95,7 @@ const EmployeeLeavePage = () => {
         </div>
 
         <div className="container relative z-10">
-          <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
+          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-16">
             <div className="flex-1 space-y-6 text-center md:text-left">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-100 text-orange-700 text-xs md:text-sm font-bold uppercase tracking-wider mb-2">
                 <span className="w-2 h-2 rounded-full bg-orange-600 animate-ping"></span>
@@ -136,12 +136,12 @@ const EmployeeLeavePage = () => {
       </section>
 
       {/* Dynamic Sections Content */}
-      <section className="py-20 bg-white">
-        <div className="container space-y-24 md:space-y-32">
+      <section className="py-6 md:py-20 bg-white">
+        <div className="container space-y-10 md:space-y-32">
           {sections.map((sec, idx) => (
-            <div key={idx} className="flex flex-col md:flex-row items-center gap-12 md:gap-20">
+            <div key={idx} className="flex flex-col md:flex-row items-center gap-4 md:gap-20">
               {/* Text Content */}
-              <div className={`flex-1 space-y-6 text-left order-2 ${sec.imgRight ? "md:order-1" : "md:order-2"}`}>
+              <div className={`flex-1 space-y-6 text-center md:text-left order-2 ${sec.imgRight ? "md:order-1" : "md:order-2"}`}>
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
                   {sec.heading}
                 </h2>

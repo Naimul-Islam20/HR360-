@@ -149,7 +149,7 @@ const EmployeeManagementPage = () => {
           {employeeManagementSections.map((sec, idx) => (
             <div key={idx} className="flex flex-col md:flex-row items-center gap-12 md:gap-20">
               {/* Text Content */}
-              <div className={`flex-1 space-y-6 text-left order-2 ${sec.imgRight ? "md:order-1" : "md:order-2"}`}>
+              <div className={`flex-1 space-y-6 text-center md:text-left order-2 ${sec.imgRight ? "md:order-1" : "md:order-2"}`}>
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
                   {sec.heading}
                 </h2>

@@ -52,7 +52,7 @@ const HrApp = () => {
             </div>
 
             {/* Additional Info */}
-            <div className="mt-6 md:mt-8">
+            <div className="mt-6 md:mt-8 text-center lg:text-left">
               <p className="text-gray-700 text-sm sm:text-base md:text-lg">
                 HR360 is a comprehensive HR and payroll solution that transforms traditional HR processes into smart, automated workflows — helping businesses save time, reduce errors, and support their teams effectively.
               </p>

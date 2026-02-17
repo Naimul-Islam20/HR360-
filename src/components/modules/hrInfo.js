@@ -12,7 +12,7 @@ const Hr360Info = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
           
           {/* ✅ Left Column - Text */}
-          <div className="  lg:ms-10 space-y-3 order-1">
+          <div className="text-center lg:text-left lg:ms-10 space-y-3 order-1">
             <h2 className="text-sm sm:text-base font-bold text-gray-500 uppercase tracking-wide">
               WHAT IS HR360?
             </h2>
@@ -20,8 +20,7 @@ const Hr360Info = () => {
             <p className="text-xl sm:text-2xl lg:text-3xl mb-6 sm:mb-10 font-bold text-[#141451] leading-snug">
               HR360 – Modern HR & Payroll Software for Bangladeshi Businesses
             </p>
-
-            <div className="space-y-3 sm:space-y-4">
+            <div className="space-y-3 sm:space-y-4 text-left">
               {[
                 "Tired of paying your HR employees yet getting slow results? Rysenova simplifies and automates HR tasks offering the most advanced core HR software solution for businesses in Bangladesh.",
                 "Our cloud-based platform provides real-time insights, reduces administrative workload, and ensures compliance with Bangladesh labor laws.",
@@ -32,15 +31,14 @@ const Hr360Info = () => {
               ].map((text, i) => (
                 <p
                   key={i}
-                  className="flex text-xs sm:text-sm gap-3 text-gray-700 leading-relaxed"
+                  className="flex text-xs sm:text-sm gap-3 text-gray-700 leading-relaxed items-start"
                 >
                   <AiOutlineCheckCircle className="text-sky-500 w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 mt-0.5" />
-                  {text}
+                  <span>{text}</span>
                 </p>
               ))}
             </div>
-
-            <p className="flex gap-3 sm:gap-4 mt-6 sm:mt-8 text-lg sm:text-xl text-gray-700 font-semibold">
+            <p className="flex justify-center lg:justify-start gap-3 sm:gap-4 mt-6 sm:mt-8 text-lg sm:text-xl text-gray-700 font-semibold">
               Interested? Request a live demo.
             </p>
 

@@ -195,7 +195,7 @@ function FaqItem({ q, a }) {
         onClick={() => setOpen((s) => !s)}
         aria-expanded={open}
       >
-        <h3 className="font-semibold text-base md:text-lg text-gray-950 leading-snug">{q}</h3>
+        <h3 className="font-semibold text-sm sm:text-base md:text-lg text-gray-950 leading-snug">{q}</h3>
         <ChevronDown
           className={`shrink-0 text-gray-800 transition-transform ${open ? "rotate-180" : "rotate-0"}`}
         />
@@ -209,7 +209,7 @@ function FaqItem({ q, a }) {
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.22, ease: "easeInOut" }}
           >
-            <div className="px-5 pb-5 pt-0 text-gray-700 text-blue leading-relaxed">{a}</div>
+            <div className="px-5 pb-5 pt-0 text-gray-700 text-xs sm:text-sm md:text-base leading-relaxed">{a}</div>
           </motion.div>
         )}
       </AnimatePresence>
@@ -231,24 +231,28 @@ export default function HR360Faq() {
           </p>
 
           {/* Contact CTA */}
-          <div className="flex flex-col sm:flex-row gap-3 justify-center items-center pt-2">
-            <a
-              href="tel:+8801713428432"
-              className="inline-flex items-center gap-2 rounded-2xl px-4 py-2 border border-sky-200 bg-white shadow hover:shadow-md transition"
-            >
-              <Phone className="h-4 w-4" /> +880 17 1342 8432
-            </a>
-            <a
-              href="tel:+8809606881188"
-              className="inline-flex items-center gap-2 rounded-2xl px-4 py-2 border border-sky-200 bg-white shadow hover:shadow-md transition"
-            >
-              <Phone className="h-4 w-4" /> Support: +880 9606 881188
-            </a>
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-3 pt-2">
+            {/* First 2 phone numbers on the same line for mobile, and part of the main row for desktop */}
+            <div className="flex flex-row gap-2 justify-center">
+              <a
+                href="tel:+8801713428432"
+                className="inline-flex items-center gap-1.5 rounded-xl px-2 sm:px-4 py-2 border border-sky-200 bg-white shadow hover:shadow-md transition text-[9px] sm:text-xs md:text-sm whitespace-nowrap"
+              >
+                <Phone className="h-3 w-3 sm:h-4 sm:w-4" /> +880 17 1342 8432
+              </a>
+              <a
+                href="tel:+8809606881188"
+                className="inline-flex items-center gap-1.5 rounded-xl px-2 sm:px-4 py-2 border border-sky-200 bg-white shadow hover:shadow-md transition text-[9px] sm:text-xs md:text-sm whitespace-nowrap"
+              >
+                <Phone className="h-3 w-3 sm:h-4 sm:w-4" /> Support: +880 9606 881188
+              </a>
+            </div>
+            {/* Email on its own line on mobile, but side-by-side on desktop */}
             <a
               href="mailto:hello@hr360.com"
-              className="inline-flex items-center gap-2 rounded-2xl px-4 py-2 border border-gray-200 bg-white shadow hover:shadow-md transition"
+              className="inline-flex items-center gap-1.5 rounded-xl px-4 py-2 border border-gray-200 bg-white shadow hover:shadow-md transition text-[9px] sm:text-xs md:text-sm whitespace-nowrap"
             >
-              <Mail className="h-4 w-4" /> hello@hr360.com
+              <Mail className="h-3 w-3 sm:h-4 sm:w-4" /> hello@hr360.com
             </a>
           </div>
         </div>

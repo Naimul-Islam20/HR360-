@@ -40,13 +40,26 @@ export default function Header() {
   // Click outside listener (desktop dropdown)
   useEffect(() => {
     function handleClickOutside(event) {
-      if (navRef.current && !navRef.current.contains(event.target)) {
+      if (openDropdown !== null) {
+        // Find if click is on a menu item or within the dropdown
+        const clickedMenuItem = event.target.closest('li.relative');
+        const clickedDropdown = event.target.closest('[class*="shadow-lg"]');
+        
+        // If clicked on the dropdown content itself, don't close
+        if (clickedDropdown) {
+          return;
+        }
+        
+        // If clicked on a different menu item or anywhere else, close the dropdown
         setOpenDropdown(null);
       }
     }
-    document.addEventListener("mousedown", handleClickOutside);
+    
+    if (openDropdown !== null) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
     return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
+  }, [openDropdown]);
 
   return (
     <nav
@@ -58,13 +71,16 @@ export default function Header() {
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/">
-              <Image
-                src="/hr360-logo.png"
-                alt="HR360 Logo"
-                width={120}
-                height={40}
-                priority
-              />
+              <div className="w-20 md:w-30">
+                <Image
+                  src="/hr360-logo.png"
+                  alt="HR360 Logo"
+                  width={120}
+                  height={40}
+                  priority
+                  className="w-full h-auto"
+                />
+              </div>
             </Link>
           </div>
 
