@@ -13,7 +13,7 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
             
             {/* Column 1: Brand & Contact */}
-            <div className="space-y-8">
+            <div className="space-y-8 flex flex-col items-center md:items-start text-center md:text-left">
               <Link href="/" className="inline-block">
                 <Image src="/hr360-logo.png" alt="HR360 Logo" width={140} height={40} className="brightness-200" />
               </Link>
@@ -21,18 +21,18 @@ export default function Footer() {
                 The most advanced and comprehensive HR & Payroll management system in Bangladesh. 
                 Trusted by hundreds of leading businesses nationwide.
               </p>
-              <div className="space-y-4">
-                <div className="flex items-start gap-3">
+              <div className="space-y-4 w-full">
+                <div className="flex items-start justify-center md:justify-start gap-3 text-center md:text-left mx-auto md:mx-0 max-w-[280px] sm:max-w-none">
                   <FaMapMarkerAlt className="text-sky-500 mt-1 flex-shrink-0" />
                   <p className="text-sm">House 39 (Level 4), Road 8, Block k, Halishahar, Aghrabad, Chattogram</p>
                 </div>
-                <div className="flex items-center gap-3">
+                <div className="flex items-center justify-center md:justify-start gap-3">
                   <FaEnvelope className="text-sky-500 flex-shrink-0" />
                   <Link href="mailto:biz.dev@hr360.com" className="text-sm hover:text-sky-500 transition-colors">
                     biz.dev@hr360.com
                   </Link>
                 </div>
-                <div className="flex items-center gap-3">
+                <div className="flex items-center justify-center md:justify-start gap-3">
                   <FaPhoneAlt className="text-sky-500 flex-shrink-0" />
                   <p className="text-sm">+880 17 1342 8432 (Sales)</p>
                 </div>
@@ -40,10 +40,10 @@ export default function Footer() {
             </div>
 
             {/* Column 2: Solutions */}
-            <div>
+            <div className="text-center md:text-left">
               <h3 className="text-white text-lg font-bold mb-8 relative inline-block">
                 Solutions
-                <span className="absolute -bottom-2 left-0 w-8 h-1 bg-sky-500 rounded-full"></span>
+                <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 w-8 h-1 bg-sky-500 rounded-full"></span>
               </h3>
               <ul className="space-y-4">
                 {[
@@ -64,10 +64,10 @@ export default function Footer() {
             </div>
 
             {/* Column 3: Features */}
-            <div>
+            <div className="text-center md:text-left">
               <h3 className="text-white text-lg font-bold mb-8 relative inline-block">
                 Features
-                <span className="absolute -bottom-2 left-0 w-8 h-1 bg-sky-500 rounded-full"></span>
+                <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 w-8 h-1 bg-sky-500 rounded-full"></span>
               </h3>
               <ul className="space-y-4">
                 {[
@@ -88,10 +88,10 @@ export default function Footer() {
             </div>
 
             {/* Column 4: Company */}
-            <div>
+            <div className="text-center md:text-left">
               <h3 className="text-white text-lg font-bold mb-8 relative inline-block">
                 Company
-                <span className="absolute -bottom-2 left-0 w-8 h-1 bg-sky-500 rounded-full"></span>
+                <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 w-8 h-1 bg-sky-500 rounded-full"></span>
               </h3>
               <ul className="space-y-4">
                 {[
@@ -109,9 +109,9 @@ export default function Footer() {
                   </li>
                 ))}
               </ul>
-              <div className="mt-8 pt-8 border-t border-gray-800">
+              <div className="mt-8 pt-8 border-t border-gray-800 flex flex-col items-center md:items-start text-center md:text-left">
                 <h4 className="text-white text-sm font-bold mb-4">Follow Our Socials</h4>
-                <div className="flex gap-3">
+                <div className="flex gap-3 justify-center md:justify-start">
                   {[
                     { icon: <FaLinkedinIn />, href: "#" },
                     { icon: <FaFacebookF />, href: "#" },

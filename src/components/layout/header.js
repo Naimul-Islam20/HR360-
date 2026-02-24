@@ -73,7 +73,7 @@ export default function Header() {
             <Link href="/">
               <div className="w-20 md:w-30">
                 <Image
-                  src="/hr360-logo.png"
+                  src="/logo.jpeg"
                   alt="HR360 Logo"
                   width={120}
                   height={40}
@@ -98,7 +98,7 @@ export default function Header() {
                   >
                     {hasChildren ? (
                       <div
-                        className="flex items-center cursor-pointer font-medium text-gray-800 hover:text-blue-600"
+                        className="flex items-center cursor-pointer font-medium text-gray-800 hover:text-blue-600 uppercase"
                         onClick={() =>
                           setOpenDropdown(
                             openDropdown === menu.id ? null : menu.id
@@ -111,7 +111,7 @@ export default function Header() {
                     ) : (
                       <Link
                         href={`/${menu.menu_uid}`}
-                        className="font-medium text-gray-800 hover:text-blue-600"
+                        className="font-medium text-gray-800 hover:text-blue-600 uppercase"
                       >
                         {menu.menu_name}
                       </Link>

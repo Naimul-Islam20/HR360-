@@ -108,7 +108,7 @@ const MobileMenu = ({ isOpen, onClose, menus }) => {
                       role="button"
                       aria-expanded={activeMenu === menu.id}
                     >
-                      <span className="text-sm font-medium text-black">
+                      <span className="text-sm font-medium text-black uppercase">
                         {menu.menu_name}
                       </span>
                       {activeMenu === menu.id ? <GoChevronUp /> : <GoChevronDown />}
@@ -153,7 +153,7 @@ const MobileMenu = ({ isOpen, onClose, menus }) => {
                   // Normal link
                   <Link
                     href={`/${menu.menu_uid}`}
-                    className="block text-sm text-gray-800 py-2"
+                    className="block text-sm text-gray-800 py-2 uppercase"
                     onClick={onClose}
                   >
                     {menu.menu_name}
